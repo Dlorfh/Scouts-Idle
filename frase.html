@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modo Frase | Scouts Idle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-mode="frase">
+  <div class="background-wrapper">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+  </div>
+
+  <main class="screen active">
+    <div class="container">
+      <header>
+        <div class="badge">Modo frase</div>
+        <h1><span>Scout</span> Idle</h1>
+        <p id="modeSubtitle" class="subtitle">Descubra o escoteiro em até <b>6 tentativas</b></p>
+      </header>
+
+      <div id="pixel-container" class="hidden"><img id="pixel-img" src="" alt="Escoteiro escondido" /></div>
+      <div id="phrase-display"></div>
+      <div class="inputArea">
+        <input id="guessInput" type="text" placeholder="Digite o nome do escoteiro..." autocomplete="off" />
+        <button id="guessButton">Tentar</button>
+      </div>
+      <div class="suggestions-container"><div id="suggestions" class="suggestions"></div></div>
+      <div id="result" class="result"></div>
+      <div id="attempts" class="attempts"></div>
+      <div id="history" class="history"></div>
+      <a href="index.html" class="back-link" id="backToMenu">&#8592; Voltar ao menu</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -168,6 +168,7 @@ h1 span {
   text-align: center;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+  text-decoration: none;
 }
 
 .mode-btn:hover {

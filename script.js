@@ -4,7 +4,7 @@ const PEOPLE = [
     grupo: 'Escoteiros',
     cidade: 'Florianópolis',
     estado: 'Santa Catarina',
-    imagem: 'assets/imagens/lorenzo.jpg',
+    imagem: 'imagens/Lorenzo.jpg',
     anosEscotismo: 6,
     nroEspecialidades: 4,
     ramo: 'Marinheiro',
@@ -155,16 +155,11 @@ const CATEGORY_DEFS = [
 const MAX_ATTEMPTS = 6;
 let target = PEOPLE[Math.floor(Math.random() * PEOPLE.length)];
 let history = [];
-let currentMode = 'tradicional';
+const currentMode = document.body.dataset.mode || 'tradicional';
 
 const input = document.getElementById('guessInput');
 const suggestions = document.getElementById('suggestions');
 const guessButton = document.getElementById('guessButton');
-
-const modeButtons = document.querySelectorAll('.mode-btn');
-modeButtons.forEach((button) => {
-  button.addEventListener('click', () => startGame(button.dataset.mode));
-});
 
 input.addEventListener('input', () => {
   const value = input.value.trim().toLowerCase();
@@ -192,14 +187,10 @@ input.addEventListener('keydown', (event) => {
 });
 
 document.getElementById('backToMenu').addEventListener('click', () => {
-  location.reload();
+  window.location.href = 'index.html';
 });
 
 function startGame(mode) {
-  currentMode = mode;
-  document.getElementById('menuScreen').classList.remove('active');
-  document.getElementById('gameScreen').classList.add('active');
-
   input.value = '';
   input.disabled = false;
   suggestions.innerHTML = '';
@@ -355,6 +346,4 @@ function finishGame() {
   }
 }
 
-window.addEventListener('load', () => {
-  startGame('tradicional');
-});
+startGame(currentMode);
