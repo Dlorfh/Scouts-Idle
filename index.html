@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scouts Idle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-wrapper">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+  </div>
+
+  <div id="menuScreen" class="screen active">
+    <div class="container">
+      <header>
+        <div class="badge">Escotismo</div>
+        <h1><span>Scout</span> Idle</h1>
+        <p class="subtitle">Escolha seu modo de aventura</p>
+      </header>
+
+      <div class="menu-options">
+        <button class="mode-btn" data-mode="tradicional">
+          <div class="mode-icon">🧭</div>
+          <h3>Tradicional</h3>
+          <p>Descubra pelo perfil da tropa.</p>
+        </button>
+
+        <button class="mode-btn" data-mode="imagem">
+          <div class="mode-icon">📷</div>
+          <h3>Imagem</h3>
+          <p>Revelação gradual do escoteiro.</p>
+        </button>
+
+        <button class="mode-btn" data-mode="frase">
+          <div class="mode-icon">💬</div>
+          <h3>Frase</h3>
+          <p>Uma citação que entrega o jogo.</p>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="gameScreen" class="screen">
+    <div class="container">
+      <header>
+        <div class="badge">Tropa em missão</div>
+        <h1><span>Scout</span> Idle</h1>
+        <p id="modeSubtitle" class="subtitle">Descubra o escoteiro em até <b>6 tentativas</b></p>
+      </header>
+
+      <div id="pixel-container" class="hidden">
+        <img id="pixel-img" src="" alt="Escoteiro" />
+      </div>
+
+      <div id="phrase-display" class="hidden"></div>
+
+      <div class="inputArea">
+        <input id="guessInput" type="text" placeholder="Digite o nome do escoteiro..." autocomplete="off" />
+        <button id="guessButton">Tentar</button>
+      </div>
+
+      <div class="suggestions-container">
+        <div id="suggestions" class="suggestions"></div>
+      </div>
+
+      <div id="result" class="result"></div>
+      <div id="attempts" class="attempts"></div>
+      <div id="history" class="history"></div>
+
+      <a href="javascript:void(0)" class="back-link" id="backToMenu">← Voltar ao menu</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
