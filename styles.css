@@ -250,6 +250,7 @@ h1 span {
 
 .inputArea button {
   padding: 0 22px;
+  min-height: 48px;
   border: none;
   border-radius: 16px;
   background: linear-gradient(135deg, var(--leaf) 0%, var(--camp) 100%);

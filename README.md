@@ -75,4 +75,6 @@ Scouts idle/
 - HTML5
 - CSS3
 - JavaScript puro
-- Bootstrap
+- Bootstrap 5.3 para grid, componentes e responsividade
+
+O layout usa o grid responsivo do Bootstrap: os cartões do menu ficam lado a lado em telas médias e grandes, enquanto os formulários e cartões de histórico se reorganizam verticalmente em celulares.
