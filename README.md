@@ -75,4 +75,4 @@ Scouts idle/
 - HTML5
 - CSS3
 - JavaScript puro
-- Google Fonts: Outfit e Lora
+- Bootstrap

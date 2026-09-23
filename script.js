@@ -313,7 +313,7 @@ function renderHistory() {
     }
 
     card.innerHTML = `
-      <img src="${entry.person.imagem}" alt="${getPersonName(entry.person)}" />
+      <img class="img-fluid" src="${entry.person.imagem}" alt="${getPersonName(entry.person)}" />
       <div class="info-side">
         <div class="name">${getPersonName(entry.person)}</div>
         <div class="quote">"${getPersonMotto(entry.person)}"</div>
