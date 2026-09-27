@@ -390,7 +390,7 @@ function renderHistory() {
 
   history.forEach((entry) => {
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'history-card';
 
     let tags = '';
 
@@ -421,8 +421,8 @@ function renderHistory() {
 
         tags += `
           <div class="tag">
-            <div class="label">${label}</div>
-            <div class="value ${resultClass}" ${tooltip}>${formatFieldValue(currentValue)}</div>
+            <div class="tag-label">${label}</div>
+            <div class="tag-value ${resultClass}" ${tooltip}>${formatFieldValue(currentValue)}</div>
           </div>
         `;
       });
@@ -431,8 +431,8 @@ function renderHistory() {
     card.innerHTML = `
       <div class="person-visual">
         <img class="img-fluid" src="${entry.person.imagem}" alt="${getPersonName(entry.person)}" />
-        <section class="associations-panel">
-          <h3>Associações</h3>
+        <section class="tag association-tag">
+          <div class="tag-label">Associações</div>
           <ul class="association-list"></ul>
           <p class="association-empty">Nenhuma associação cadastrada.</p>
         </section>

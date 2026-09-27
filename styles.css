@@ -106,9 +106,7 @@ input {
   }
 }
 
-.container {
-  width: 100%;
-  max-width: 1140px;
+.screen-container {
   margin: 0 auto;
   padding: 60px 1rem 80px;
 }
@@ -118,7 +116,7 @@ header {
   margin-bottom: 40px;
 }
 
-.badge {
+.scout-badge {
   display: inline-block;
   padding: 8px 18px;
   border-radius: 999px;
@@ -333,7 +331,7 @@ h1 span {
   gap: 22px;
 }
 
-.card {
+.history-card {
   display: flex;
   align-items: flex-start;
   gap: 24px;
@@ -356,7 +354,7 @@ h1 span {
   }
 }
 
-.card img {
+.history-card img {
   flex: 0 0 auto;
   width: 140px;
   height: 140px;
@@ -374,19 +372,13 @@ h1 span {
   align-items: stretch;
 }
 
-.associations-panel {
+.association-tag {
   min-width: 0;
-  padding: 12px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 14px;
+  text-align: left;
 }
 
-.associations-panel h3 {
-  margin: 0 0 10px;
-  color: var(--sand);
-  font-size: 0.85rem;
-  font-weight: 700;
+.association-tag .tag-label {
+  text-align: center;
 }
 
 .association-list {
@@ -445,7 +437,7 @@ h1 span {
   text-align: center;
 }
 
-.label {
+.tag-label {
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -453,7 +445,7 @@ h1 span {
   margin-bottom: 8px;
 }
 
-.value {
+.tag-value {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -486,7 +478,7 @@ h1 span {
   color: #fff;
 }
 
-.result {
+.game-result {
   margin-top: 28px;
   text-align: center;
   font-size: clamp(2rem, 4vw, 3rem);
@@ -518,7 +510,7 @@ h1 span {
 }
 
 @media (max-width: 640px) {
-  .container {
+  .screen-container {
     padding-top: 36px;
     padding-bottom: 48px;
   }
@@ -531,7 +523,7 @@ h1 span {
     font-size: clamp(2.6rem, 15vw, 4rem);
   }
 
-  .card {
+  .history-card {
     padding: 18px 16px;
     flex-direction: column;
     align-items: stretch;
@@ -569,12 +561,12 @@ h1 span {
     padding: 10px 7px;
   }
 
-  .label {
+  .tag-label {
     letter-spacing: 0.04em;
     font-size: 0.6rem;
   }
 
-  .value {
+  .tag-value {
     font-size: 0.7rem;
     overflow-wrap: anywhere;
   }
