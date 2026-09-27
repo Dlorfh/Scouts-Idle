@@ -8,13 +8,14 @@ const PEOPLE = [
     anosEscotismo: '3 anos+',
     nroEspecialidades: 20,
     ramo: 'Senior',
-    motto: '...',
+    motto: 'Porque que ele colocou a mão pra trás?',
     genero: 'Masculino',
     patente: 'Monitor',
     jaFoiEmAcampamentoNacional: true,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: '...',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Artur Rubert',
@@ -31,7 +32,8 @@ const PEOPLE = [
     jaFoiEmAcampamentoNacional: true,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: 'Cruzeiro do Sul, Escoteiro da Pátria',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Isabela Cardeal Pereira',
@@ -42,13 +44,14 @@ const PEOPLE = [
     anosEscotismo: '6 anos+',
     nroEspecialidades: '15+',
     ramo: 'Pioneiro',
-    motto: '...',
+    motto: 'Eu amo falar do ramo pioneiro!',
     genero: 'Feminino',
     patente: 'Patrulheira',
     jaFoiEmAcampamentoNacional: false,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: 'Cruzeiro do Sul',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Luis Fernando Teixeira Martins',
@@ -59,13 +62,14 @@ const PEOPLE = [
     anosEscotismo: '6 meses+',
     nroEspecialidades: 1,
     ramo: 'Senior',
-    motto: '...',
+    motto: 'What is this?!',
     genero: 'Masculino',
     patente: 'Patrulheiro',
     jaFoiEmAcampamentoNacional: false,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: '...',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Maria Caporal Schramm',
@@ -76,13 +80,14 @@ const PEOPLE = [
     anosEscotismo: '3 anos+',
     nroEspecialidades: '15+',
     ramo: 'Senior',
-    motto: '...',
+    motto: 'So tinha pantene pra lavar...',
     genero: 'Feminino',
     patente: 'Patrulheira',
     jaFoiEmAcampamentoNacional: false,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: '...',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Maxwell Gonçalves Vieira Fernandes',
@@ -93,13 +98,14 @@ const PEOPLE = [
     anosEscotismo: '6 meses+',
     nroEspecialidades: 2,
     ramo: 'Senior',
-    motto: '...',
+    motto: 'O que que a Bia veio fazer aqui?',
     genero: 'Masculino',
     patente: 'Sub-Monitor',
     jaFoiEmAcampamentoNacional: false,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: '...',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Pedro Henrique Machado Gomes',
@@ -110,13 +116,14 @@ const PEOPLE = [
     anosEscotismo: '9 meses+',
     nroEspecialidades: 2,
     ramo: 'Senior',
-    motto: '...',
+    motto: 'Legaaal',
     genero: 'Masculino',
     patente: 'Sub-Monitor',
     jaFoiEmAcampamentoNacional: false,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: '...',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Pedro Miguel Duarte Brocca',
@@ -127,13 +134,14 @@ const PEOPLE = [
     anosEscotismo: '4 anos+',
     nroEspecialidades: 0,
     ramo: 'Senior',
-    motto: '...',
+    motto: 'Esqueci meu lenço em casa.',
     genero: 'Masculino',
     patente: 'Patrulheiro',
     jaFoiEmAcampamentoNacional: false,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: '...',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Rodolfo Brocca Goulart',
@@ -150,7 +158,8 @@ const PEOPLE = [
     jaFoiEmAcampamentoNacional: true,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: '...',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Theo Ilha Saldanha',
@@ -161,13 +170,14 @@ const PEOPLE = [
     anosEscotismo: '3 anos+',
     nroEspecialidades: 0,
     ramo: 'Senior',
-    motto: '...',
+    motto: '1,2,3,4,5,6,7,8,9...',
     genero: 'Masculino',
     patente: 'Sub-Monitor',
     jaFoiEmAcampamentoNacional: true,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: '...',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
   },
   {
     nome: 'Yago Eduardo Rosa da Costa',
@@ -178,13 +188,68 @@ const PEOPLE = [
     anosEscotismo: '3 anos+',
     nroEspecialidades: 0,
     ramo: 'Senior',
-    motto: '...',
+    motto: 'Foi nessas brincadeiras...',
     genero: 'Masculino',
     patente: 'Monitor',
     jaFoiEmAcampamentoNacional: false,
     jaFoiEmAcampamentoInternacional: false,
     insigniaGrauMaximo: '...',
-    modalidade: 'Mar'
+    modalidade: 'Mar',
+    associacoes: []
+  },
+  {
+    nome: 'Helena Rubert',
+    grupo: 'Ilha dos Lobos',
+    cidade: 'Torres',
+    estado: 'RS',
+    imagem: 'imagens/HelenaRubert.jpg',
+    anosEscotismo: '1 anos+',
+    nroEspecialidades: 3,
+    ramo: 'Lobinho',
+    motto: 'Eu vou te morde!',
+    genero: 'Feminino',
+    patente: 'Patrulheira',
+    jaFoiEmAcampamentoNacional: false,
+    jaFoiEmAcampamentoInternacional: false,
+    insigniaGrauMaximo: '...',
+    modalidade: 'Mar',
+    associacoes: []
+  },
+  {
+    nome: 'Sabrina Rubert',
+    grupo: 'Ilha dos Lobos',
+    cidade: 'Torres',
+    estado: 'RS',
+    imagem: 'imagens/Sabrina.jpg',
+    anosEscotismo: '8 anos+',
+    nroEspecialidades: 0,
+    ramo: 'Chefia',
+    motto: '...',
+    genero: 'Feminino',
+    patente: 'Secretária',
+    jaFoiEmAcampamentoNacional: false,
+    jaFoiEmAcampamentoInternacional: false,
+    insigniaGrauMaximo: '...',
+    modalidade: 'Mar',
+    associacoes: []
+  },
+  {
+    nome: 'Julio Cesar Moreira Lopez Filho',
+    grupo: 'Ilha dos Lobos',
+    cidade: 'Torres',
+    estado: 'RS',
+    imagem: 'imagens/Julio.jpg',
+    anosEscotismo: '5 anos+',
+    nroEspecialidades: 0,
+    ramo: 'Chefia',
+    motto: '...',
+    genero: 'Masculino',
+    patente: 'Chefe Auxiliar',
+    jaFoiEmAcampamentoNacional: false,
+    jaFoiEmAcampamentoInternacional: false,
+    insigniaGrauMaximo: '...',
+    modalidade: 'Mar',
+    associacoes: []
   },
 ];
 
@@ -364,13 +429,31 @@ function renderHistory() {
     }
 
     card.innerHTML = `
-      <img class="img-fluid" src="${entry.person.imagem}" alt="${getPersonName(entry.person)}" />
+      <div class="person-visual">
+        <img class="img-fluid" src="${entry.person.imagem}" alt="${getPersonName(entry.person)}" />
+        <section class="associations-panel">
+          <h3>Associações</h3>
+          <ul class="association-list"></ul>
+          <p class="association-empty">Nenhuma associação cadastrada.</p>
+        </section>
+      </div>
       <div class="info-side">
         <div class="name">${getPersonName(entry.person)}</div>
         <div class="quote">"${getPersonMotto(entry.person)}"</div>
         <div class="tags">${tags}</div>
       </div>
     `;
+
+    const associations = Array.isArray(entry.person.associacoes) ? entry.person.associacoes : [];
+    const associationList = card.querySelector('.association-list');
+    associations.forEach((association) => {
+      const item = document.createElement('li');
+      item.textContent = association;
+      associationList.appendChild(item);
+    });
+    if (associations.length > 0) {
+      card.querySelector('.association-empty').hidden = true;
+    }
 
     container.appendChild(card);
   });

@@ -22,6 +22,7 @@ Os perfis ficam no array `PEOPLE`, em `script.js`. Cada objeto pode conter:
 - número de especialidades
 - ramo
 - lema (`motto`)
+- associações (`associacoes`, lista de textos)
 - gênero
 - patente
 - participação em acampamento nacional e internacional
